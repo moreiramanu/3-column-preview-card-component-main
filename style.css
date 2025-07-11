@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: white;
+    display: flex;
+    align-items:center;
+    min-height: 100vh;
+    width:100vw;
+    justify-content: center;
+
+}
+.fonte-lexend{
+    font-family: "Lexend Deca";
+    font-size: auto;
+    font-weight: 400px;
+    font-style: normal;
+}
+.fonte-shoulders{
+    font-family:"Big Shoulders";
+    font-size: auto;
+    font-weight:400px;
+    font-style: normal;
+}
+.texto-1{
+    font-family: "Big Shoulders";
+    font-size:40px;
+    font-weight: 700px;
+    letter-spacing: 0px;
+    line-height:auto;
+    color: white;
+    text-transform: uppercase;
+}
+.texto-2{
+    font-family:"Lexend Deca";
+    font-size: 15px;
+    font-weight: 500px;
+    letter-spacing: 0px;
+    line-height:auto;
+    color: white;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    height: 500px;
+    width:921;
+    border-radius:8px;
+
+}
+.card-1,
+.card-2,
+.card-3{
+    height: 410px;
+    width: 270px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding: 2rem;
+   
+}
+.card-1{
+  background-color:hsl(31, 77%, 52%);
+  border-bottom-left-radius: 8px;
+
+}
+.card-2{
+ background-color:  hsl(184, 100%, 22%);
+  border-bottom-left-radius: 8px;
+}
+
+.card-3{
+ background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.conteudo{
+    display:flex;
+    flex-direction: column;
+    gap:35px;
+}
+.card-icon{
+    width: 66px;
+    height:42px;
+}
+.botao-1,
+.botao-2,
+.botao-3{
+    width: 146px;
+  height: 48px;
+  background-color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 20px;
+  text-decoration: none;
+  margin-left: 35px;
+    }
+.botao-1{
+    text-align: center;
+    color:hsl(31, 77%, 52%);
+}
+.botao-2{
+    text-align: center;
+    color:hsl(184, 100%, 22%);
+}
+.botao-3{
+    text-align: center;
+    color:hsl(179, 100%, 13%);
+}
+@media (max-width:768px) {
+.container {
+ flex-direction: column;
+ align-items: center;
+margin-bottom: 40px;
+margin-top: 40px;;
+height: fit-content;
+}
+} 
+@media (max-width: 768px) {
+.botao-1,
+.botao-2,
+.botao-3{ 
+        margin-top: 20px;
+}
+body{
+    display: block;
+}
+ 
+
+    
+}
